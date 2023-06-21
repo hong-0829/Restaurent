@@ -1,0 +1,230 @@
+<html>
+
+<head>
+    <!-- Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <!--FAVICON(browser icon)-->
+    <link rel="shorcut icon" href="IMG/NEIVCE%20%EF%BC%88half%EF%BC%89.png">
+    <!-- bootstrap.min,css-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--style.css link(must above</head> / closing </head tag)-->
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+    <!-- Home-->
+    <div class="menu_bar" id="menu_bar">
+        <a href="#Home" style="text-decoration: none;"><h1 class="logo">THIRTY <span ><sup>8</sup></span></h1></a>
+        
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="">About <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                    <ul>
+                    <li><a href="#Founder">Founder</a></li>
+                    <li><a href="#Our Restaurent">Our Restaurent</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="slideshow-container" id="Home">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/TitleImage/thirty8-1.jpg" style="width:100%" >
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/TitleImage/thirty8-2.jpg" style="width: 100%;" >
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/TitleImage/thirty8-3.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+        <div class="welcome"><h1>Welcome To <b style="color: rgb(144, 0, 0);">Thirty</b><span><sup style="color: rgb(255, 209, 209);">8</sup></span></h1></div>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div><br><br>
+
+
+    <!-- Give Slide Auto Move -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3500); // Change image every 2 seconds
+        }
+    </script>
+    <br><br>
+    <!--About (Founder) -->
+    <div id="Founder" >
+        <div class="founder" >
+
+            <div >
+                <br><br><br><br><br>
+                <img src="img/Design1.jpg" class="Design1">
+                <h2  style="text-align: center;">Founder</h2>
+                <br><br>
+                <div class="container1">
+                    <section>
+                    <img src="img/founder.jpg" alt="Avatar1" class="image1">
+                    <div class="overlay1">
+                        <div class="text1">Rolf Knecht</div>
+                    </div>
+                    </section>
+                </div>
+            </div>
+                    <ul class="icon-link">
+                        <li><a href=https://www.instagram.com/ target="_blank" class="icon-black"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href=https://www.facebook.com/ target="_blank" class="icon-black"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href=https://www.youtube.com/ target="_blank" class="icon-black"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+            <br><br><p><b>It is a principle that is held with pride by the Grand Hyatt Kuala Lumpur<br> and its new Executive Chef, <br>
+                      Rolf Knecht, who helms the hotel's Thirty8 restaurant.</b></p><br>
+
+        </div>
+    </div><br>
+
+    <!--About (Our Restaurent) -->
+    <div id="Our Restaurent">
+        <br><br><br><br><br><h2>Our Restaurent</h2><br><br><br>
+        <p class="restaurent"><b>Significant to its name, THIRTY8 is located on the 38th floor boasting a 360-degree city<br> view to complement 
+            the elegance of its dining areas, bar and lounge, along with lively<br> show kitchens which serve exquisite cuisines like Western and Chinese. 
+            The captivating<br> panoramic view, the dramatic sense of décor and the splendour 
+            <br>of its cuisine are what makes THIRTY8 the signature restaurant of the hotel. 
+            Whether to entertain business<br> associates or celebrate special occasions with family and friends, THIRTY8 is the place</br> to be.</b></br> - <br>
+            <b>In view of overwhelming patronage we have received for afternoon tea and dinner,<br>THIRTY8 may encounter 
+            full-house situations where seats will not be available for walk-<br>ins.
+             To avoid disappointments and to help us manage all expectations, 
+             we strongly<br> recommend advanced reservations to be made for dine-ins at THIRTY8.</b>
+        </p>
+        <img src="img/Design2.jpg" class="Design2">
+        <img src="img/Design3.jpg" class="Design3">
+    </div><br>
+
+    <!-- Menu -->
+    <div class="Menu" id="Menu">
+        <br><br><br><br><br>
+        <h2>Menu</h2>
+        <br>
+        <img src="img/Design4.jpg" class="Design4">
+        <p style="white-space: pre;" class="menu1">            <b><span class="menu_title">Chef + Bar Cocktail Flight</span><br>
+            Reimagining the dramatic sense it originally stood for, 
+            THIRTY8 Bar now features a series of unique concoctions 
+            including the debut ofa progressive cocktail flight ready
+            to tease your palate on a whole new level. Featuring four
+            petit cocktails complemented by an individual signature 
+            canapé, our 'Chef + Bar' would be a dazzling choice to start with.
+            
+                                                                                                             Availability: Daily
+                                                                                                             Price: MYR 99 nett
+
+                                                                                                             Menu: <a href="https://bit.ly/3mrKMTw">https://bit.ly/3mrKMTw</a>
+        </b></p><br>
+        <img src="img/Design6.jpg" class="Design6">
+    </div><br>
+
+    <!--  Contact  -->
+    <div class="Contact" id="contact">
+            <h2>Our Contact</h2><br>
+        <div class="contact1">
+            <p style="white-space: pre;">Daily:    7:00 AM - 11:00 PM
+                                 <span style="color: rgb(125, 0, 0);">* Last seating is at 9:30 PM</span></p><br>
+            
+            <p>Breakfast:</p><br>
+            <p>7:00 AM - 10:30 AM (Weekdays)</p><br>
+            <p>7:00 AM - 11:00 AM (Weekends & Public Holidays)</p><br>
+            <p>* Non-in-house guests are welcomed on weekdays on a first come, first served basis    </p><br>
+            <p>Phone:    +60 3 2203 9188</p><br>
+            <p style="white-space: pre;">Email:   thirty8.kuagh@hyatt.com    <a href="mailto:thirty8.kuagh@hyatt.com">Email to us</a></p><br>
+            <p>Location:    Level 38 of Grand Hyatt Kuala Lumpur</p><br>
+            
+        </div>
+
+    </div>
+
+<!-- Give Header stick Function -->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("menu_bar");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    } 
+</script>
+
+<footer>
+    <div class="footer">
+            <div class="row">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+    
+            <div class="row">
+                <ul>
+                    <li><a href="mailto:thirty8.kuagh@hyatt.com">Contact us</a></li>
+                    <li>Our Services</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+    
+    </div>
+</footer>
+
+    <!-- DO NOT DELETE CODE BELOW-->
+    <!-- DO NOT DELETE CODE BELOW-->
+    <!-- DO NOT DELETE CODE BELOW-->
+
+    <!--Jquery.js link-->
+    <script src="JS/jquery-3.6.4.js"></script>
+    <!--custom.js link (must above closing body tag)-->
+    <script src="JS/Custom.js"></script>
+</body>
+
+</html>
